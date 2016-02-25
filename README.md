@@ -2,4 +2,4 @@
 alfred workflows
 
 * open finder
-通过`cmd` + `E` 打开finder
+  * 通过`cmd` + `E` 打开finder
