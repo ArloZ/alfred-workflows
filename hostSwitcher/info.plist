@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>hosts-switcher</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>8CCEC75B-ADC0-494B-9C0C-FBABB45CD569</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>27E82BD0-F80F-4E6D-8F18-C3FD4F895FA3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>CB7A7FE4-16A4-4A9E-B043-481EEFFD1F0D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8CCEC75B-ADC0-494B-9C0C-FBABB45CD569</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D835CFFA-B7CD-4BC5-BC5E-942732B38003</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>open with sublime</string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>arloz</string>
+	<key>description</key>
+	<string>hsots 文件切换</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>HostsSwitcher</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import hostaction
+query = "{query}"
+
+hostaction.do(query)
+
+</string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8CCEC75B-ADC0-494B-9C0C-FBABB45CD569</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>title</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>27E82BD0-F80F-4E6D-8F18-C3FD4F895FA3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>host</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>import hostmenu
+
+query="{query}"
+
+print hostmenu.do(query)
+</string>
+				<key>title</key>
+				<string>Host Switcher</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CB7A7FE4-16A4-4A9E-B043-481EEFFD1F0D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>openwith</key>
+				<string>/Applications/Sublime Text.app</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openfile</string>
+			<key>uid</key>
+			<string>D835CFFA-B7CD-4BC5-BC5E-942732B38003</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>some tools</string>
+	<key>uidata</key>
+	<dict>
+		<key>27E82BD0-F80F-4E6D-8F18-C3FD4F895FA3</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>8CCEC75B-ADC0-494B-9C0C-FBABB45CD569</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>CB7A7FE4-16A4-4A9E-B043-481EEFFD1F0D</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>D835CFFA-B7CD-4BC5-BC5E-942732B38003</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>arloz@gmail.com</string>
+</dict>
+</plist>
