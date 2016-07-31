@@ -3,6 +3,7 @@ alfred workflows
 
 ### open finder
 * 通过`cmd` + `E` 打开finder
+
 ### Host Switcher
 * 通过alfred快速切换hosts文件
     * `host help`：使用帮助信息
